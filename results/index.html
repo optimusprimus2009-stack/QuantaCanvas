@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+        <link rel="shortcut icon" href="icon.ico" type="image/x-icon" id ="icon">
+</head>
+<body>
+    
+    <div id ="nav">
+        <button id="changeTheme" onclick="change_theme()">
+            <span class="material-symbols-rounded">
+                brightness_medium
+            </span>
+
+        </button>
+        <a href = "../index.html" id="name-link">QuantaCanvas</a> 
+    </div>
+<br><br><br><br>
+<iframe id="iframe"></iframe>
+<br>
+
+<div class="input-group">
+
+            <input id="promptbar" placeholder="Ask anything...">
+            <a href="results/index.html"><button id="sendbtn" onclick="send_prompt()"><span class="material-symbols-rounded" id="send">
+                    send
+                </span></button></a>
+
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
