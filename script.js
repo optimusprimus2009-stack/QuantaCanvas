@@ -57,9 +57,10 @@ input.addEventListener("keypress", function(event) {
 function send_prompt(){
 
     localStorage.setItem("prompt", document.getElementById("promptbar").value)
-  const result = await window.pywebview.api.prompt("hello");
+  const result = window.pywebview.api.prompt("hello");
     alert(result);
 }
+
 
 
 
