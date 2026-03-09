@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>QuantaCanvas - AI companion</title>
+    <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" id ="icon">
+</head>
+
+
+<body id="body">
+    <div>
+        <button id="changeTheme" onclick="change_theme()">
+            <span class="material-symbols-rounded">
+                brightness_medium
+            </span>
+
+        </button>
+    </div>
+    <div id="container">
+
+        <div>
+            <h1 id="name">QuantaCanvas</h1>
+            <h3 id="caption">Your AI companion for math and science</h3>
+
+        </div>
+        <br>
+
+        <div class="input-group">
+
+            <input id="promptbar" placeholder="Ask anything about math or science...">
+            <a href="results/index.html"><button id="sendbtn" onclick="send_prompt()"><span class="material-symbols-rounded" id="send">
+                    send
+                </span></button></a>
+
+        </div>
+
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

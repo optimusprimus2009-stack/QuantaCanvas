@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Mokoto';
+    src: url('fonts/Mokoto Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    background-color: #eff1f5;
+    background-size: 20px 20px;
+    background-image: linear-gradient(90deg, #ccd0da 1px, transparent 0px), linear-gradient(#ccd0da 1px, transparent 0px);
+}
+
+#container {
+    text-align: center;
+}
+
+h1::selection {
+  background-color: #00000000; 
+    font-family: 'Mokoto';
+}
+
+.input-group {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    transition: background 1s ease-in-out;
+
+
+}
+
+.input-group::before {
+    content: "";
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    filter: blur(35px);
+
+    background: linear-gradient(to right, #d20f39, #e64553, #fe640b, #df8e1d, #40a02b, #179299, #04a5e5, #209fb5, #1e66f5);
+    ;
+
+    transition: all 1s ease-in-out;
+    animation: blink 2s ease-in-out infinite;
+
+}
+
+.input-group:focus-within::before {
+    opacity: 1;
+}
+
+
+.dark .input-group::before {
+    content: "";
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    filter: blur(35px);
+
+    background: linear-gradient(to right, #ed8796, #ee99a0, #f5a97f, #eed49f, #a6da95, #8bd5ca, #91d7e3, #7dc4e4, #8aadf4);
+
+    transition: all 1s ease-in-out;
+    animation: blink 2s ease-in-out infinite;
+
+}
+
+.dark .input-group:focus-within::before {
+    opacity: 1;
+}
+
+#sendbtn {
+    border: 1px #bcc0cc solid;
+    border-left: 0px;
+    outline: 0;
+    padding: 10px;
+    background: #acb0be;
+    color: #4c4f69;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+#send {
+    font-size: 2.3vw;
+}
+
+
+
+input {
+    background: #ccd0da;
+    color: #4c4f69;
+    border: 1px #bcc0cc solid;
+    outline: 0;
+    font-size: 2vw;
+    padding: 10px;
+    width: 40vw;
+    border-radius: 10px 0px 0px 10px;
+}
+
+input::placeholder {
+    color: #4c4f69;
+}
+
+#caption {
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(18px, 5vw);
+    color: #5c5f77;
+    margin-top: -15px;
+}
+
+
+
+#name {
+    font-family: 'Mokoto', sans-serif;
+    font-size: clamp(50px, 10vw, 120px);
+    margin-bottom: 10px;
+
+    background: linear-gradient(to right, #d20f39, #e64553, #fe640b, #df8e1d, #40a02b, #179299, #04a5e5, #209fb5, #1e66f5);
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+
+    animation: gradientAnimation 10s ease infinite;
+}
+
+#changeTheme {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 100px;
+    border: 0;
+    padding: 5px;
+    border: 1px #bcc0cc solid;
+    background-color: #ccd0da;
+    cursor: pointer;
+}
+
+
+.dark #name {
+
+    background: linear-gradient(to right, #ed8796, #ee99a0, #f5a97f, #eed49f, #a6da95, #8bd5ca, #91d7e3, #7dc4e4, #8aadf4);
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+
+    animation: gradientAnimation 10s ease infinite;
+}
+
+.dark #caption {
+    color: #b8c0e0;
+
+}
+
+
+.dark #sendbtn {
+    font-size: 2vw;
+    border: 1px #494d64 solid;
+    border-left: 0;
+    outline: 0;
+    background: #6e738d;
+    color: #cad3f5;
+}
+
+
+.dark {
+    background-color: #24273a;
+    color: #cad3f5;
+}
+
+.dark input {
+    background: #363a4f;
+    color: #cad3f5;
+    border: 1px #494d64 solid;
+    outline: 0;
+}
+
+.dark input::placeholder {
+    color: #cad3f5;
+}
+
+.material-symbols-rounded {
+    color: #4c4f69;
+
+}
+
+.dark .material-symbols-rounded {
+    color: #cad3f5;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes blink {
+    0% {
+        filter: blur(35px);
+    }
+
+    50% {
+        filter: blur(50px);
+    }
+
+    100% {
+        filter: blur(35px);
+    }
+}
+
+.dark #changeTheme {
+    background-color: #363a4f;
+
+    border: 1px #494d64 solid;
+}
+
