@@ -1,3 +1,6 @@
+if (!localStorage.getItem("theme")) {
+    localStorage.setItem("theme", "light");  
+}
 var theme = localStorage.getItem("theme")
 
 
@@ -56,4 +59,5 @@ function send_prompt(){
     localStorage.setItem("prompt", document.getElementById("promptbar").value)
   
 }
+
 
