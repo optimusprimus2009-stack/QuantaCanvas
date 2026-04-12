@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Offside&display=swap');
+
+* {
+    margin: 0;
+    padding: 5px;
+}
+
+body {
+    background: #303446;
+    color: #c6d0f5;
+}
+
+h1 {
+    font-family: Asimovian;
+    font-size: 50px;
+
+
+}
+
+h2 {
+    font-family: asimovian;
+}
+
+p {
+    font-family: offside;
+}
+
+#subtitle {
+    font-family: offside;
+}
+
+#bar {
+    background: #292c3c;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sub-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+button {
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: #292c3c;
+    color: #c6d0f5;
+    padding: 10px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+#theme_button{
+    background: #303446;
+}
