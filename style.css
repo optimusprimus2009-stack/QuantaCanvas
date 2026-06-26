@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Offside&display=swap');
+
+* {
+	margin: 0;
+	padding: 15px;
+}
+
+body {
+	background-size: 20px 20px;
+	background: #24273a;
+
+	color: #c6d0f5;
+	height: 100vh;
+  background-image: 
+
+    linear-gradient(#494d6488 1px, transparent 1px),
+    linear-gradient(90deg, #494d6488 1px, transparent 1px);
+  
+  background-size: 20px 20px;
+  animation: load 2s ease-out;
+}
+
+h1 {
+	font-family: Asimovian;
+	font-size: 50px;
+
+
+}
+
+h2 {
+	font-family: asimovian;
+}
+
+p {
+	font-family: offside;
+}
+
+#subtitle {
+	font-family: offside;
+}
+
+#bar {
+	background: #292c3c88;
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  border: 1px solid #494d64;
+  backdrop-filter:blur(1.5px);
+}
+
+#sub-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+button {
+	border-radius: 10px;
+	border: 1px solid #494d64;
+	outline: 0;
+	cursor: pointer;
+	background: #292c3c88;
+	color: #c6d0f5;
+	padding: 10px;
+    backdrop-filter:blur(1.5px);
+  z-index:0;
+  position:relative;
+    transition:scale .5s ease-in-out;
+}
+
+#logo {
+	width: 50px;
+	height: 50px;
+}
+
+::selection {
+  color: #a5adcb;
+  background: #363a4f;
+  border-radius:10px;
+}
+
+#faq-bar,#screenshots-bar,#prompts-bar,#app,#features{
+	background: #292c3c88;
+	padding: 10px;
+	border-radius: 10px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  border: 1px solid #494d64;
+  margin-top:15px;
+    backdrop-filter:blur(1.5px);
+
+}
+
+#screenshot_images{
+  display:flex;
+  flex-direction:row;
+}
+
+#screenshot{
+width:320;
+  height:180px;
+  transition:scale .5s ease-in-out;
+}
+
+#screenshot:hover{
+
+scale:2;
+  
+}
+
+#qc {
+	background: #292c3c88;
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  border: 1px solid #494d64;
+  margin-top:15px;
+    backdrop-filter:blur(1.5px);
+}
+  
+
+button:hover{
+  scale:1.25;
+  z-index:1;
+}
+
+@keyframes load{
+  0%{
+    transform:translateY(-100px);
+  opacity:0;
+  }
+  100%{
+    opacity:1;
+     transform:translateY(0);
+  }
+}
